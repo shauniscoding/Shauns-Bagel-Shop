@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light darkgray" style="height: 80px; object-fit: cover;">
+        <a class="navbar-brand" href="homepage.html"><img src="images/bagel.png" alt="Bagel png by Monkik" height="50" width="50"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ">
+            
+            <li class="nav-item ">
+              <a class="nav-link text-warning" href="menupage.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="locations.html"> Locations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning"> Coupons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning"> Catering</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning text-outline-warning" href="aboutpage.html"> About</a>
+            </li>
+            
+          </ul>
+          <h5 class="m-3 text-warning newNamePrompt2"> Hello There!</h5>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning  my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+
+        <div class="card d-flex flex-row menu-bar bg-secondary">
+            
+            <!--Menu sidebar-->
+            <div class="card d-md-block menu-bar m-3 darkgray curved-edges" style="max-width: 18rem; height: 1000px;">
+
+                <!--menu sidebar div-->
+                <div class="card-body menu-bar darkgray curved-edges">
+                    <h1 class="card-title title text-warning">Menu</h1>
+                    <!--Menu Item-->
+                    <ul class="h2 text-warning" style="white-space: nowrap;">
+                        <li class="bagelOption remove-bp">Bagels</li>
+                        <li class="donutOption remove-bp">Donuts</li>
+                        <li class="pancakesOption remove-bp">Pancakes</li>
+                        <li class=" remove-bp">Sandwhiches</li>
+                        <li class=" remove-bp"> Coffee</li>
+                        <li class=" remove-bp">Beverages</li>
+                        <li class=" remove-bp">More</li>
+                    </ul>
+                    
+                    <!--cost and calories card-->
+                    <div class="card-body bg-secondary curved-edges" style="height:260px; margin-top: 50px;"> 
+                        <div class="d-inline-flex align-items-center">
+                            <h3>Price:$ </h3>
+                            <h3 class="totalCost">0.00</h3>
+                        </div>
+
+                        <div class="d-inline-flex align-items-center">
+                            <h3>Calories: </h3>
+                            <h3 class="totalCalories">0</h3>
+                        </div>
+
+                        <!--discount button-->
+                        <div class="card-body darkgray curved-edges d-flex justify-content-center align-items-center discountButtonValue" style="height:60px; margin-top:10px;">
+                            <h3 class="text-warning">25% Off!</h3>
+                        </div>
+                        <!--reset button-->
+                        <div class="card-body darkgray curved-edges d-flex justify-content-center align-items-center resetButtonValue" style="height:60px; margin-top:10px;">
+                            <h3 class="text-warning">Reset</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        <!--Bagels options-->
+        <div class="card m-3 bg-secondary" style="width: 1150px">
+            <h1 class="bigTitle mx-auto text-warning" style="font-size: 70px;"> Bagels</h1>
+            <!--bagel menu items-->
+            <div class="card-body">
+                <!-- Individual bagels -->
+                <div class="card-deck">
+                    <!--row 1-->
+                    <div class="row">
+                        <!--bagel 1-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image1" class=" card-img-top mx-auto" src="images/food_eat_diet_bagel_plain_bread-1387011.jpg!d" alt="Image of Bagel" style="width:200px; height: 200px; ">
+                                <div class="card-body darkgray bottom-curved-edges" >
+                                    <h5 class="titleText1 card-title text-center text-warning">Original Bagel</h5>
+                                    <p class="descriptionText1 card-text text-break text-warning"> Experience the timeless appeal of our original bagels: chewy, crisp, and bursting with flavor. Our original bagel promises a satisfying experience that evokes tradition and culinary craftsmanship</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText1 card-text"><small class="text-muted">$1.50</small></p>
+                                        <p class="caloriesText1 card-text"><small class="text-muted">270 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus1">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus1">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--bagel 2-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image2" class="card-img-top mx-auto" src="images/81x0W9XF4uL.jpg" alt="Image of Bagel" style="width:200px; height: 200px;">
+                                <div class="card-body darkgray bottom-curved-edges">
+                                    <h5 class=" titleText2 card-title text-center text-warning">Everything Bagel</h5>
+                                    <p class="descriptionText2 card-text text-break text-warning">Our classic bagel topped with a mixture of sesame seeds, poppy seeds, dried garlic, dried onion, and salt, providing a savory and flavorful taste to brigthen up your mornings</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText2 card-text"><small class="text-muted">$2.99</small></p>
+                                        <p class="caloriesText2 card-text"><small class="text-muted">300 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus2">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--bagel 3-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image3" class="card-img-top mx-auto" src="images/resize.webp" alt="Image of Bagel" style="width:200px; height: 200px;">
+                                <div class="card-body darkgray bottom-curved-edges">
+                                    <h5 class="titleText3 card-title text-center text-warning">Asiago Bagel</h5>
+                                    <p class="descriptionText3 card-text text-break text-warning">Rich Asiago cheese blended with savory seasonings, offering a perfect balance of chewiness and crispiness. Ideal for any meal or snack, it is a gourmet twist on a classic favorite</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText3 card-text"><small class="text-muted">$3.50</small></p>
+                                        <p class="caloriesText3 card-text"><small class="text-muted">350 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus3">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second row -->
+                    <div class="row">
+                        <!--bagel 4-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image4" class="card-img-top mx-auto" src="images/blueberry_1024x1024_73ae3bce-4891-4fa8-888c-f7905dd8f318_800x600.webp" alt="Image of Bagel" style="width:200px; height: 200px;">
+                                <div class="card-body darkgray bottom-curved-edges">
+                                    <h5 class="titleText4 card-title text-center text-warning">Blueberry Bagel</h5>
+                                    <p class="descriptionText4 card-text text-warning">Our blueberry bagels are bursting with plump juicy blueberries. Indulge in the perfect blend of sweetness and tartness, creating a tasty treat for any time of day</p>
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText4 card-text "><small class=" t text-muted">$1.99</small></p>
+                                        <p class="caloriesText4 card-text"><small class="text-muted">200 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus4">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--bagel 5-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image5" class="card-img-top mx-auto" src="images/raisinbagel.jpg" alt="Image of Bagel" style="width:200px; height: 200px;">
+                                <div class="card-body darkgray bottom-curved-edges">
+                                    <h5 class="titleText5 card-title text-center text-warning">Cinnamon Raisin Bagel</h5>
+                                    <p class="descriptionText5 card-text text-warning">Savor the delightful combination of sweet raisins and cinnamon in our cinnamon raisin bagels. Balanced and comforting, these bagels are here for a limited time</p>
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText5 card-text "><small class=" beigetext text-muted">$2.99</small></p>
+                                        <p class="caloriesText5 card-text"><small class="text-muted">340 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus5">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--bagel 6-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 curved-edges">
+                                <img id="image6" class="card-img-top mx-auto" src="images/s344259539468720702_p31_i2_w1920.webp" alt="Image of Bagel" style="width:200px; height: 200px;">
+                                <div class="card-body darkgray bottom-curved-edges">
+                                    <h5 class="titleText6 card-title text-center text-warning">French Toast Bagel</h5>
+                                    <p class="descriptionText6 card-text text-warning">Indulge in the classic flavors of French toast infused into the chewy goodness of a bagel. Each bite is a delightful fusion of cinnamon, maple sweetness, and richness</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="priceText6 card-text"><small class=" text-warning text-muted">$2.99</small></p>
+                                        <p class="caloriesText6 card-text"><small class="text-muted">450 Calories</small></p>
+                                    </div>
+                                    <div>
+                                        <img src="images/add.png" style="width:20px; height: 20px;" class="plus6">
+                                        <img src="images/minus.png" style="width:20px; height: 20px;" class="minus6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        </div>
+
+      </div>
+      
+      <script src="menupage.js"> </script>
+</body>
+</html>
